@@ -1,0 +1,27 @@
+﻿@model Dog
+<h1>Dogs DOT COM</h1>
+<h2>Heres our Dogs</h2>
+@foreach(var dog in ViewBag.Dogs)
+{
+    <p>@dog["Name"] (@dog["Breed"])</p>
+}
+<hr>
+<h2>Add a Dog</h2>
+<form asp-action="Create" asp-controller="Home" method="post">
+    <div class="form-group">
+        <span asp-validation-for="Name"></span>
+        <label asp-for="Name"></label>
+        <input type="text" asp-for="Name">
+    </div>
+    <div class="form-group">
+        <span asp-validation-for="Breed"></span>
+        <label asp-for="Breed"></label>
+        <input type="text" asp-for="Breed">
+    </div>
+    <div class="form-group">
+        <span asp-validation-for="Weight"></span>
+        <label asp-for="Weight"></label>
+        <input type="text" asp-for="Weight">
+    </div>
+    <input type="submit" value="Add Dog!">
+</form>

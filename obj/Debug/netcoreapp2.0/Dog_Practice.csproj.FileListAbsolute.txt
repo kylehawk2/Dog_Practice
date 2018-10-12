@@ -1,0 +1,4 @@
+C:\Users\Kyle\Documents\C#-.NET\Dog_Practice\obj\Debug\netcoreapp2.0\Dog_Practice.csprojResolveAssemblyReference.cache
+C:\Users\Kyle\Documents\C#-.NET\Dog_Practice\obj\Debug\netcoreapp2.0\Dog_Practice.csproj.CoreCompileInputs.cache
+C:\Users\Kyle\Documents\C#-.NET\Dog_Practice\obj\Debug\netcoreapp2.0\Dog_Practice.AssemblyInfoInputs.cache
+C:\Users\Kyle\Documents\C#-.NET\Dog_Practice\obj\Debug\netcoreapp2.0\Dog_Practice.AssemblyInfo.cs
