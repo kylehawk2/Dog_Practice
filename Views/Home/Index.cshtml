@@ -1,7 +1,7 @@
 ﻿@model Dog
 <h1>Dogs DOT COM</h1>
 <h2>Heres our Dogs</h2>
-@foreach(var dog in ViewBag.Dogs)
+@foreach(var dog in ViewBag.dogs)
 {
     <p>@dog["Name"] (@dog["Breed"])</p>
 }

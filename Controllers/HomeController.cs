@@ -4,10 +4,10 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Dog.Models;
+using Dog_Practice.Models;
 using DbConnection;
 
-namespace Dog.Controllers
+namespace Dog_Practice.Controllers
 {
     public class HomeController : Controller
     {
@@ -25,10 +25,16 @@ namespace Dog.Controllers
             {
                 // Prevent duplicate Name/Breed combos
                 string query = $"SELECT * FROM dogs WHERE Name = '{dog.Name}' AND Breed = '{dog.Breed}';";
+                List<Dictionary<string, object>> result = DbConnector.Query(query);
 
-                return RedirectToAction("Login");
+                if(result.Count > 0)
+                {
+                    ModelState.AddModelError("Name", "Name/Breed combination exists already!");
+                }
+
+                return RedirectToAction("Index");
             }
-            return View("Registration");
+            return View("Index");
         }
     }
 }

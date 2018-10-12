@@ -2,3 +2,10 @@ C:\Users\Kyle\Documents\C#-.NET\Dog_Practice\obj\Debug\netcoreapp2.0\Dog_Practic
 C:\Users\Kyle\Documents\C#-.NET\Dog_Practice\obj\Debug\netcoreapp2.0\Dog_Practice.csproj.CoreCompileInputs.cache
 C:\Users\Kyle\Documents\C#-.NET\Dog_Practice\obj\Debug\netcoreapp2.0\Dog_Practice.AssemblyInfoInputs.cache
 C:\Users\Kyle\Documents\C#-.NET\Dog_Practice\obj\Debug\netcoreapp2.0\Dog_Practice.AssemblyInfo.cs
+C:\Users\Kyle\Documents\C#-.NET\Dog_Practice\bin\Debug\netcoreapp2.0\Dog_Practice.deps.json
+C:\Users\Kyle\Documents\C#-.NET\Dog_Practice\bin\Debug\netcoreapp2.0\Dog_Practice.runtimeconfig.json
+C:\Users\Kyle\Documents\C#-.NET\Dog_Practice\bin\Debug\netcoreapp2.0\Dog_Practice.runtimeconfig.dev.json
+C:\Users\Kyle\Documents\C#-.NET\Dog_Practice\bin\Debug\netcoreapp2.0\Dog_Practice.dll
+C:\Users\Kyle\Documents\C#-.NET\Dog_Practice\bin\Debug\netcoreapp2.0\Dog_Practice.pdb
+C:\Users\Kyle\Documents\C#-.NET\Dog_Practice\obj\Debug\netcoreapp2.0\Dog_Practice.dll
+C:\Users\Kyle\Documents\C#-.NET\Dog_Practice\obj\Debug\netcoreapp2.0\Dog_Practice.pdb

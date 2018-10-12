@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Dog.Models
+namespace Dog_Practice.Models
 {
     public class Dog
     {
