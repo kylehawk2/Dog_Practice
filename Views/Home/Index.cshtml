@@ -3,7 +3,7 @@
 <h2>Heres our Dogs</h2>
 @foreach(var dog in ViewBag.dogs)
 {
-    <p>@dog["Name"] (@dog["Breed"])</p>
+    <p><a href ='/@dog["DogId"]'></a>@dog["Name"] (@dog["Breed"])</p>
 }
 <hr>
 <h2>Add a Dog</h2>

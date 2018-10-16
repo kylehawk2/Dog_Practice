@@ -11,14 +11,26 @@ namespace Dog_Practice.Controllers
 {
     public class HomeController : Controller
     {
+        private DogFactory factory;
+        public HomeController()
+        {
+            factory = new DogFactory();
+        }
         [HttpGet("")]
         public IActionResult Index()
         {
             ViewBag.dogs = DbConnector.Query("SELECT * FROM dogs");
             return View();
         }
+
+        [HttpGet("{dogId}")]
+        public IActionResult Show(int dogId)
+        {
+            return View(factory.GetDogById(dogId));
+        }
+
         [HttpPost("create")]
-        public IActionResult Create(Dog dog)
+        public IActionResult Create(Dog dog, string Name, string Breed, string Weight) 
         {
             // Check ModelState for Model-defined validations
             if (ModelState.IsValid)
@@ -31,9 +43,11 @@ namespace Dog_Practice.Controllers
                 {
                     ModelState.AddModelError("Name", "Name/Breed combination exists already!");
                 }
-
+                string sql = $"INSERT INTO dogs(Name, Breed, Weight, CreatedAt, UpdatedAt) VALUES ('{Name}', '{Breed}', '{Weight}', NOW(), NOW())";
+                DbConnector.Execute(sql);
                 return RedirectToAction("Index");
             }
+            
             return View("Index");
         }
     }
